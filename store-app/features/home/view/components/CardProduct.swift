@@ -36,7 +36,8 @@ struct CardProduct: View {
                 }
                 Spacer()
                 Button{
-                    print("cart")
+                    let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                    impactMed.impactOccurred()
                 } label: {
                     VStack{
                         Image(systemName: "cart.badge.plus")
